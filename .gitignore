@@ -18,11 +18,11 @@ logs/
 # Ignore YAML configuration files
 deploy.yml
 
-# Ignore PNG images (architecture diagrams and flowcharts)
-*.png
+# # Ignore PNG images (architecture diagrams and flowcharts)
+# *.png
 
-# Ignore README files (if not needed in the repository)
-README.md
+# # Ignore README files (if not needed in the repository)
+# README.md
 
 # Ignore hidden directories and files (e.g., .github workflows)
 .github/
