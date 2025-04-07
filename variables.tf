@@ -1,4 +1,4 @@
-# variables that are being used
+
 
 variable "aws_region" {
   description = "Default Region"

@@ -70,4 +70,9 @@ resource "aws_iam_role_policy_attachment" "ecs_task_execution_role" {
 resource "aws_ecr_repository" "medusa_repo" {
   name                 = var.ecr_repo_name
   image_tag_mutability = "MUTABLE"
+
+  lifecycle {
+    prevent_destroy = true
+    ignore_changes  = [name]
+  }
 }

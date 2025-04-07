@@ -1,6 +1,6 @@
 terraform {
   backend "s3" {
-    bucket         = "your-tf-state-bucket"
+    bucket         = "tfstate-medusa-devops-nsp"
     key            = "medusa/terraform.tfstate"
     region         = "us-east-1"
     dynamodb_table = "terraform-locks"
@@ -15,5 +15,5 @@ terraform {
 }
 # Configure the AWS Provider
 provider "aws" {
-  region = var.aws_region  # This uses a variable to determine the region
+  region = var.aws_region  
 }
