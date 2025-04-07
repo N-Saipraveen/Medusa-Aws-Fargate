@@ -1,0 +1,29 @@
+# Ignore Terraform state files
+*.tfstate
+*.tfstate.backup
+
+# Ignore Terraform lock file
+.terraform.lock.hcl
+
+# Ignore Terraform configuration directory
+.terraform/
+
+# Ignore zip files
+*.zip
+
+# Ignore logs and debug files
+logs/
+*.log
+
+# Ignore YAML configuration files
+deploy.yml
+
+# Ignore PNG images (architecture diagrams and flowcharts)
+*.png
+
+# Ignore README files (if not needed in the repository)
+README.md
+
+# Ignore hidden directories and files (e.g., .github workflows)
+.github/
+
