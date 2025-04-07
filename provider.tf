@@ -1,4 +1,11 @@
 terraform {
+  backend "s3" {
+    bucket         = "your-tf-state-bucket"
+    key            = "medusa/terraform.tfstate"
+    region         = "us-east-1"
+    dynamodb_table = "terraform-locks"
+  }
+
   required_providers {
     aws = {
       source  = "hashicorp/aws"

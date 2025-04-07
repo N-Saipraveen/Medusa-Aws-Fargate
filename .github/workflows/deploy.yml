@@ -9,7 +9,7 @@ env:
   AWS_REGION: us-east-1  
   AWS_ACCOUNT_ID: ${{ secrets.AWS_ACCOUNT_ID }}  
   ECR_REPO_NAME: medusa-repo
-  IMAGE_TAG: latest
+  IMAGE_TAG: ${{ github.sha }}
 
 jobs:
   build-and-deploy:
@@ -51,7 +51,10 @@ jobs:
 
       - name: Terraform Init
         run: terraform init
-        
+
+      - name: Terraform Plan
+        run: terraform plan
+
       - name: Terraform Apply
         run: terraform apply -auto-approve
 

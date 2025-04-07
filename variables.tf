@@ -55,3 +55,7 @@ variable "fargate_memory" {
   description = "Fargate instance memory to provision"
   default     = "2048" # approx 2GB
 }
+
+variable "ecr_repo_name" {
+  default = "medusa-repo"
+}

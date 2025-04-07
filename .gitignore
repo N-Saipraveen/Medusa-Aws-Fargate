@@ -24,6 +24,6 @@ deploy.yml
 # # Ignore README files (if not needed in the repository)
 # README.md
 
-# Ignore hidden directories and files (e.g., .github workflows)
-.github/
+# # Ignore hidden directories and files (e.g., .github workflows)
+# .github/
 
